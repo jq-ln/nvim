@@ -60,7 +60,8 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'tpope/vim-surround'
 Plug 'windwp/nvim-autopairs'
 Plug 'windwp/nvim-ts-autotag'
-Plug 'sheerun/vim-polyglot'
+"Plug 'sheerun/vim-polyglot'
+Plug 'neoclide/vim-jsx-improve'
 
 " => REST.NVIM & DEPENDENCIES
 Plug 'rest-nvim/rest.nvim'
