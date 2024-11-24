@@ -12,6 +12,7 @@ set shiftwidth=0
 set expandtab
 set notermguicolors
 set mouse=
+set autoindent
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " => KEY REMAPS
@@ -149,17 +150,6 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-" Use K to show documentation in preview window
-nnoremap <silent> K :call ShowDocumentation()<CR>
-
-function! ShowDocumentation()
-  if CocAction('hasProvider', 'hover')
-    call CocActionAsync('doHover')
-  else
-    call feedkeys('K', 'in')
-  endif
-endfunction
-
 " Highlight the symbol and its references when holding the cursor
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
@@ -255,6 +245,16 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+" Use K to show documentation in preview
+nnoremap <silent> K :call Show_Documentation()<CR>
+
+function! Show_Documentation()
+  if CocAction('hasProvider', 'hover')
+    call CocActionAsync('doHover')
+  else
+    call feedkeys('K', 'in')
+  endif
+endfunction
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " => NECESSARY CONFIGURATIONS
