@@ -13,6 +13,9 @@ set expandtab
 set notermguicolors
 set mouse=
 set autoindent
+set background=dark
+
+colorscheme gruvbox
 
 hi Comment ctermfg=blue
 
@@ -64,6 +67,7 @@ Plug 'tpope/vim-surround'
 Plug 'windwp/nvim-autopairs'
 Plug 'windwp/nvim-ts-autotag'
 "Plug 'sheerun/vim-polyglot'
+Plug 'ellisonleao/gruvbox.nvim'
 Plug 'neoclide/vim-jsx-improve'
 
 " => REST.NVIM & DEPENDENCIES
