@@ -14,6 +14,8 @@ set notermguicolors
 set mouse=
 set autoindent
 
+hi Comment ctermfg=blue
+
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " => KEY REMAPS
 """"""""""""""""""""""""""""""""""""""""""""""""""
