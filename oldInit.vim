@@ -1,4 +1,3 @@
-
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " => GENERAL SETTINGS
 """"""""""""""""""""""""""""""""""""""""""""""""""
@@ -15,7 +14,6 @@ set mouse=
 set autoindent
 set background=dark
 
-colorscheme gruvbox
 
 hi Comment ctermfg=blue
 
@@ -69,6 +67,7 @@ Plug 'windwp/nvim-ts-autotag'
 "Plug 'sheerun/vim-polyglot'
 Plug 'ellisonleao/gruvbox.nvim'
 Plug 'neoclide/vim-jsx-improve'
+Plug 'epwalsh/obsidian.nvim'
 
 " => REST.NVIM & DEPENDENCIES
 Plug 'rest-nvim/rest.nvim'
@@ -283,3 +282,4 @@ lua require("/config")
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() :
 	\ "\<CMD>call feedkeys(v:lua.require('nvim-autopairs').autopairs_cr(), 'in')\<CR>"
 
+colorscheme gruvbox
